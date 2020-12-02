@@ -8,5 +8,8 @@ ThisBuild / organizationName := "eggsample"
 lazy val root = (project in file("."))
   .settings(
     name := "advent2020",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= Seq(
+      catsParse,
+      scalaTest % Test
+    )
   )

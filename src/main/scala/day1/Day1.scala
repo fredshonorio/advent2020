@@ -3,7 +3,7 @@ package day1
 import scala.io.Source
 import scala.util.Using
 
-object Part1And2 {
+object Day1 {
   def main(args: Array[String]): Unit = {
     val entries = Using(Source.fromFile("src/main/scala/day1/input")) {
       _.getLines().map(_.toInt).toList
